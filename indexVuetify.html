@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+
+<body>
+  <div id="app">
+    <v-app>
+      <v-main>
+        <v-container class="d-flex justify-center mt-11">
+          <v-card width="50%" class=" py-5">
+            <h2 class="text-center mb-5">Dúvidas Frequentes</h2>
+            <v-expansion-panels flat>
+              <v-expansion-panel>
+                <v-expansion-panel-header>
+                  <h4>1. Não consigo me candidatar em uma vaga</h4>
+                </v-expansion-panel-header>
+                <v-expansion-panel-content>
+                  <ul>
+                    <li>Algumas empresas não aceitam candidatos que já se cadastraram em vagas anteriores. Se esse não
+                      for
+                      seu caso, entre em contato com a Jovool.</li>
+                  </ul>
+                </v-expansion-panel-content>
+              </v-expansion-panel>
+              <v-expansion-panel>
+                <v-expansion-panel-header>
+                  <h4>2. Esqueci a minha senha</h4>
+                </v-expansion-panel-header>
+                <v-expansion-panel-content>
+                  <ul>
+                    <li>
+                      <p>Na página de login/cadastro, abaixo do formulário de login, clique no link “Esqueceu sua
+                        senha?”,
+                        destacado na imagem abaixo:</p>
+                      <img src="./img/login.png" alt="">
+                    </li>
+                    <li>
+                      <p>Você será direcionado para uma página de recuperação de senha, onde será necessário inserir o
+                        email
+                        cadastrado: </p>
+                      <img src="./img/email.png" alt="Email - Recuperar senha">
+                    </li>
+                    <li>
+                      <p>Após inserir o email, aparecerá uma mensagem de sucesso (como a da imagem) e você receberá um
+                        email
+                        com as próximas instruções.</p>
+                      <img src="./img/sucesso.png" alt="Sucesso - Recuperar senha">
+                    </li>
+                    <li>
+                      <p>Quando receber o email, basta clicar no link “Alterar Senha” e ele o redirecionará para a outra
+                        etapa.</p>
+                      <img src="./img/linkEmail.png" alt="Sucesso - Recuperar senha">
+                    </li>
+                    <li>
+                      <p>Aqui será necessário escolher sua nova senha, lembre-se de escolher uma senha forte para
+                        garantir a
+                        segurança. Após escolher a senha nova, retorne a página de login e teste a nova senha. Se o
+                        problema
+                        persistir, nos contate.</p>
+                      <img src="./img/trocaSenha.png" alt="Sucesso - Recuperar senha">
+                    </li>
+                  </ul>
+                </v-expansion-panel-content>
+              </v-expansion-panel>
+              <v-expansion-panel>
+                <v-expansion-panel-header>
+                  <h4>3. Não consigo gravar vídeos</h4>
+                </v-expansion-panel-header>
+                <v-expansion-panel-content>
+                  <ul>
+                    <li>
+                      <p>Em computadores,notebooks e celulares, por padrão de segurança, seu navegador pedirá permissão
+                        para
+                        habilitar a câmera e o microfone, clique no botão “PERMITIR”, para liberar a função dentro do
+                        site:
+                      </p>
+                      <v-row>
+                        <v-col cols="12" md="5" lg="6">
+                          <img src="./img/permissao.png" alt="Login - Esqueci minha senha" width="250">
+                        </v-col>
+                        <v-col cols="12" md="5" lg="6">
+                          <img src="./img/permissaoIphone.png" alt="Login - Esqueci minha senha">
+                        </v-col>
+                      </v-row>
+                    <li>Há casos em que o problema não é a permissão, mas sim o navegador não ter o suporte para esse
+                      tipo de ação. Para resolver isso, é preciso instalar no um navegador no seu dispositivo.</li>
+                    </li>
+                    <v-expansion-panels flat>
+                      <v-expansion-panel>
+                        <v-expansion-panel-header>
+                          <h4>3.1. Instalar navegador no Celular Android</h4>
+                        </v-expansion-panel-header>
+                        <v-expansion-panel-content>
+                          <ul>
+                            <li>
+                              <p>Indicamos a instalação do navegador Chrome, acesse em seu dispositivo a loja de
+                                aplicativos “Play Store”.</p>
+                            </li>
+                            <li>
+                              <p>Busque por “Navegador Chrome” e clique em “Atualizar/Instalar”, aguarde concluir o
+                                processo de download e instalação, ao final clique no botão “ABRIR” e acesse o seu link
+                                de cadastro para a vaga.</p>
+                            </li>
+                          </ul>
+                        </v-expansion-panel-content>
+                      </v-expansion-panel>
+                      <v-expansion-panel>
+                        <v-expansion-panel-header>
+                          <h4>3.2. Instalar navegador no Celular IOS</h4>
+                        </v-expansion-panel-header>
+                        <v-expansion-panel-content>
+                          <ul>
+                            <li>
+                              <p>Indicamos a instalação do navegador Chrome, acesse em seu dispositivo a loja de
+                                aplicativos “App Store”</p>
+                            </li>
+                            <li>
+                              <p>Busque por “Navegador Chrome” e clique no símbolo de download destacado na imagem
+                                abaixo, aguarde concluir o processo de download e instalação, ao final clique no botão
+                                “ABRIR” e acesse o seu link de cadastro para a vaga.</p>
+                            </li>
+                          </ul>
+                        </v-expansion-panel-content>
+                      </v-expansion-panel>
+                    </v-expansion-panels>
+                  </ul>
+                </v-expansion-panel-content>
+              </v-expansion-panel>
+          </v-card>
+        </v-container>
+      </v-main>
+    </v-app>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      vuetify: new Vuetify(),
+    })
+  </script>
+</body>
+
+</html>
