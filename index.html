@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+  <title>Modal de dúvidas frequentes</title>
+
+  <style>
+    .card h1 {
+      font-size: 30px;
+      color: #44246B;
+    }
+
+    .accordion-item {
+      border: none;
+    }
+
+    .accordion-button {
+      color: #44246B;
+      font-weight: 500;
+      letter-spacing: -0.5px;
+    }
+
+    .accordion-button:not(.collapsed) {
+      background-color: rgba(146, 114, 253, 0.1);
+      color: #9272fd;
+      box-shadow: none;
+    }
+
+    .accordion-button:not(.collapsed)::after {
+      background-image: url('img/chevron.png');
+    }
+
+    .accordion-button::after {
+      background-image: url('img/chevron1.png');
+    }
+
+    .accordion-button:focus {
+      box-shadow: none;
+    }
+
+    .accordion-body {
+      color: #212529;
+    }
+
+    @media (max-width: 319.98px) {
+
+      .accordion-button,
+      .accordion-body p {
+        font-size: 14px;
+      }
+
+      .accordion-body,
+      .accordion-button {
+        padding: 1rem 0.5rem;
+      }
+
+      .imageType1 img,
+      .imageType2 img,
+      .imageType3 img,
+      .imageType4 img {
+        width: 170px !important;
+      }
+    }
+
+    @media (min-width: 320px) and (max-width: 575.98px) {
+
+      .accordion-button,
+      .accordion-body p {
+        font-size: 14px;
+      }
+
+      .imageType1 img,
+      .imageType2 img,
+      .imageType3 img {
+        width: 290px !important;
+      }
+
+    }
+
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      .card h1 {
+        font-size: 28px;
+      }
+
+      .imageType2 img {
+        max-width: 440px;
+      }
+
+      .imageType3 img {
+        max-width: 350px;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .imageType2 img {
+        max-width: 470px !important;
+      }
+
+      .imageType3 img {
+        max-width: 320px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="col-lg-8 col-md-8 col-sm-12 card my-5">
+        <h1 class="text-center mt-4">Dúvidas Frequentes</h1>
+        <div class="card-body">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  1. Não consigo me candidatar em uma vaga
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>• Algumas empresas não aceitam candidatos que já se cadastraram em vagas anteriores. Se esse
+                    não
+                    for seu caso, nos contate para resolvermos o seu problema.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  2. Esqueci a minha senha
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>• Na página de login/cadastro, abaixo do formulário de login, clique no link “Esqueceu
+                    sua senha?”, destacado na imagem abaixo:</p>
+                  <div class="imageType1 d-flex flex-row justify-content-center">
+                    <img src="./img/doLogin.png" alt="Esqueceu a senha?">
+                  </div>
+                  <p class="mt-4">• Você será direcionado para uma página de recuperação de senha, onde será necessário
+                    inserir o email cadastrado:</p>
+                  <div class="imageType2 d-flex flex-row justify-content-center">
+                    <img src="./img/lostPassword.png" alt="Recuperar sua senha">
+                  </div>
+                  <p class="mt-4">• Após inserir o e-mail, aparecerá uma mensagem de sucesso (como a da imagem), próximo
+                    passo é checar sua caixa de e-mail.</p>
+                  <div class="imageType2 d-flex flex-row justify-content-center">
+                    <img src="./img/recoverPassword.png" alt="Recuperar sua senha - Sucesso">
+                  </div>
+                  <p class="mt-4">• Na sua caixa de e-mail, verifique se a mensagem está na caixa de entrada ou foi
+                    encaminhada para Spam/Lixeira. Clique no link “Alterar Senha”, ele o redirecionará para uma nova
+                    página.</p>
+                  <div class="imageType3 d-flex flex-row justify-content-center">
+                    <img src="./img/email.png" alt="Email para Alterar a Senha">
+                  </div>
+                  <p class="mt-4">• Na página carregada insira uma senha no primeiro campo e repita ela no campo abaixo:
+                  </p>
+                  <div class="imageType2 d-flex flex-row justify-content-center">
+                    <img src="./img/changePassword.png" alt="Mudar a Senha">
+                  </div>
+                  <p class="mt-4">• Por fim, retorne à página de login e use a senha nova, se o problema persistir
+                    entrar
+                    em contato com o suporte da Jovool.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                3. Não consigo gravar vídeos
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>• Em computadores, notebooks e celulares, por padrão de segurança, seu navegador pedirá
+                  permissão
+                  para habilitar a câmera e o microfone, clique no botão “PERMITIR”, para liberar a função dentro
+                  do site:
+                </p>
+                <div class="row text-center">
+                  <div class="imageType4 col-lg-6 col-md-12 col-sm-12 my-2">
+                    <img src="./img/permissionDesktop.png" alt="Permissão áudio e vídeo - desktop">
+                  </div>
+                  <div class="imageType4 col-lg-6 col-md-12 col-sm-12 my-2">
+                    <img src="./img/permissionMobile.png" alt="Permissão áudio e vídeo - mobile">
+                  </div>
+                </div>
+                <p class="mt-4">• Há casos em que o problema não é a permissão, mas sim o navegador não suportar esse
+                  tipo de ação. Para resolver isso, é preciso instalar no seu dispositivo um navegador com esse
+                  suporte.</p>
+                <div class="accordion" id="accordion-2">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-1">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        3.1. Instalar navegador no celular Android
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="heading-1"
+                      data-bs-parent="#accordion-2">
+                      <div class="accordion-body">
+                        <p>• Indicamos a instalação do navegador Chrome, acesse em seu dispositivo a loja
+                          de aplicativos “Play Store”.</p>
+                        <div class="listImage d-flex flex-row justify-content-center">
+                          <img src="./img/logoPlayStore.png" alt="Logo Play Store" width="90">
+                        </div>
+                        <p class="mt-4">• Busque por “Navegador Chrome” e clique em “Atualizar/Instalar”, aguarde
+                          concluir o
+                          processo de download e instalação, ao final clique no botão “ABRIR” e acesse o seu link
+                          de cadastro para a vaga.</p>
+                        <div class="imageType1 d-flex flex-row justify-content-center">
+                          <img src="./img/chromePlayStore.png" alt="Chrome na Play Store">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-2">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        3.2. Instalar navegador no celular IOS
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="heading-2"
+                      data-bs-parent="#accordion-2">
+                      <div class="accordion-body">
+                        <p>• Indicamos a instalação do navegador Chrome, acesse em seu dispositivo a loja
+                          de aplicativos “App Store”.</p>
+                        <div class="listImage d-flex flex-row justify-content-center">
+                          <img src="./img/appStoreLogo.png" alt="Logo App Store" width="90">
+                        </div>
+                        <p class="mt-4">• Busque por “Navegador Chrome” e clique no símbolo de download destacado na
+                          imagem
+                          abaixo, aguarde concluir o processo de download e instalação, ao final clique no botão
+                          “ABRIR” e acesse o seu link de cadastro para a vaga.</p>
+                        <div class="imageType1 d-flex flex-row justify-content-center">
+                          <img src="./img/chromeAppStore.png" alt="Chrome na App Store">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+<!-- imageTypes: -->
+<!-- imageType1 {
+  width: 370px
+} -->
+<!-- imageType2 {
+  width: 570px
+} -->
+<!-- imageType3 {
+  width: 470px
+} -->
+<!-- imageType4 {
+  width: 280px
+} -->
